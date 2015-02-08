@@ -19,7 +19,7 @@ describe ProfileParserService, :type => :class do
     end
 
     describe '#parse' do
-        it 'builds competition-results objects' do
+        it 'builds results objects' do
 
             # one stub for each year
             stub_request(:get, 'http://statletik.dk/profil.php?id=9333&sex=m&year=2008').
@@ -45,6 +45,8 @@ describe ProfileParserService, :type => :class do
                 to_return(:status => 200, :body => open(__dir__ + '/../../html/profil_2014.html', 'r').readlines, :headers => {})
 
             results = @parser.parse
+
+            puts results
 
             expect(results.size).to eq 151
         end

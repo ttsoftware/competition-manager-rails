@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :competition_result do
+  factory :result do
     
   end
 

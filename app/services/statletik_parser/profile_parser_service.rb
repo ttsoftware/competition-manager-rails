@@ -54,7 +54,7 @@ class ProfileParserService
 
                     results.push(
                         {
-                            :discpline => discipline,
+                            :discipline => discipline,
                             :value => value,
                             :competition_id => competition_id,
                             :competition_name => competition_name,
