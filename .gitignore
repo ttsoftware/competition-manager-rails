@@ -1,3 +1,6 @@
 .idea/
 .idea/*
-
+tmp
+tmp/*
+vendor
+vendor/*
