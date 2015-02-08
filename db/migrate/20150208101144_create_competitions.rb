@@ -6,6 +6,7 @@ class CreateCompetitions < ActiveRecord::Migration
             t.datetime :start_date
             t.datetime :end_date
 
+            t.integer :competition_statletik_id
         end
     end
 end
